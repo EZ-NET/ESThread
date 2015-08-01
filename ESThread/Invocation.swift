@@ -31,7 +31,7 @@ public func invokeAsync(queue:dispatch_queue_t, after delay:Double, predicate:()
 }
 
 /// Invoke `predicate` synchronously on `queue`.
-public func invokeSync<Result>(queue:dispatch_queue_t, predicate:()->Result) -> Result {
+public func invoke<Result>(queue:dispatch_queue_t, predicate:()->Result) -> Result {
 	
 	var result:Result!
 	
@@ -55,7 +55,7 @@ public func invokeAsyncOnMainQueue(after delay:Double, predicate:()->Void) {
 }
 
 /// Invoke `predicate` synchronously on main queue. If this function performed on main thread, invoke `predicate` immediately.
-public func invokeSyncOnMainQueue<Result>(predicate:()->Result) -> Result {
+public func invokeOnMainQueue<Result>(predicate:()->Result) -> Result {
 	
 	if onMainQueue {
 		
@@ -63,7 +63,7 @@ public func invokeSyncOnMainQueue<Result>(predicate:()->Result) -> Result {
 	}
 	else {
 		
-		return invokeSync(mainQueue, predicate: predicate)
+		return invoke(mainQueue, predicate: predicate)
 	}
 }
 

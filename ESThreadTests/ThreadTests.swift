@@ -29,7 +29,7 @@ class ThreadTests: XCTestCase {
 
 		var invoked:Bool = false
 		
-		invokeSyncOnMainQueue { ()->Void in
+		invokeOnMainQueue { ()->Void in
 			
 			expected().success(onMainQueue)
 
