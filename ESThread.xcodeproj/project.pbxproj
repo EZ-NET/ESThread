@@ -7,43 +7,89 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B174750D1B6CD36700A86785 /* ESThread.h in Headers */ = {isa = PBXBuildFile; fileRef = B174750C1B6CD36700A86785 /* ESThread.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B17475141B6CD36700A86785 /* ESThread.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B17475091B6CD36700A86785 /* ESThread.framework */; };
-		B17475191B6CD36700A86785 /* ESThreadTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B17475181B6CD36700A86785 /* ESThreadTests.swift */; };
+		5672FFD5A9DAED044E1A80A8 /* Pods_ESThread_iOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A668D83A5308CBE9F662DA5D /* Pods_ESThread_iOSTests.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		6B6F3A21F74F0C66E0684C8B /* Pods_ESThread_OSXTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 024550DEDD3726AF43BF72C8 /* Pods_ESThread_OSXTests.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		B17475321B6CD37100A86785 /* ESThread.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B17475281B6CD37000A86785 /* ESThread.framework */; };
+		B17475471B6CD37D00A86785 /* ESThread_iOS.h in Headers */ = {isa = PBXBuildFile; fileRef = B17475461B6CD37D00A86785 /* ESThread_iOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B174754E1B6CD37D00A86785 /* ESThread.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B17475441B6CD37D00A86785 /* ESThread.framework */; };
+		B17475D51B6CD59200A86785 /* Invocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B17475D31B6CD59200A86785 /* Invocation.swift */; };
+		B17475D61B6CD59200A86785 /* Invocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B17475D31B6CD59200A86785 /* Invocation.swift */; };
+		B17475D71B6CD59200A86785 /* Thread.swift in Sources */ = {isa = PBXBuildFile; fileRef = B17475D41B6CD59200A86785 /* Thread.swift */; };
+		B17475D81B6CD59200A86785 /* Thread.swift in Sources */ = {isa = PBXBuildFile; fileRef = B17475D41B6CD59200A86785 /* Thread.swift */; };
+		B17475DD1B6CD84C00A86785 /* ThreadTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B17475D91B6CD61C00A86785 /* ThreadTests.swift */; };
+		B17475DE1B6CD84C00A86785 /* ThreadTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B17475D91B6CD61C00A86785 /* ThreadTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		B17475151B6CD36700A86785 /* PBXContainerItemProxy */ = {
+		B17475331B6CD37100A86785 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = B17475001B6CD36700A86785 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = B17475081B6CD36700A86785;
-			remoteInfo = ESThread;
+			remoteGlobalIDString = B17475271B6CD37000A86785;
+			remoteInfo = ESThread_OSX;
+		};
+		B174754F1B6CD37D00A86785 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B17475001B6CD36700A86785 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B17475431B6CD37D00A86785;
+			remoteInfo = ESThread_iOS;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		B17475091B6CD36700A86785 /* ESThread.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ESThread.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B174750C1B6CD36700A86785 /* ESThread.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ESThread.h; sourceTree = "<group>"; };
-		B174750E1B6CD36700A86785 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B17475131B6CD36700A86785 /* ESThreadTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ESThreadTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		B17475181B6CD36700A86785 /* ESThreadTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ESThreadTests.swift; sourceTree = "<group>"; };
-		B174751A1B6CD36700A86785 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		024550DEDD3726AF43BF72C8 /* Pods_ESThread_OSXTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ESThread_OSXTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		72DB099D4F84F7BCFC0F8EA6 /* Pods-ESThread_iOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ESThread_iOSTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ESThread_iOSTests/Pods-ESThread_iOSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		75F80DB4457EC53799899F3C /* Pods-ESThread_OSXTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ESThread_OSXTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ESThread_OSXTests/Pods-ESThread_OSXTests.debug.xcconfig"; sourceTree = "<group>"; };
+		9535CE05C0CC3E87CFA674DB /* Pods-ESThread_OSXTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ESThread_OSXTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ESThread_OSXTests/Pods-ESThread_OSXTests.release.xcconfig"; sourceTree = "<group>"; };
+		A599CEF78A27E8E5D8A23414 /* Pods-ESThread_iOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ESThread_iOSTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ESThread_iOSTests/Pods-ESThread_iOSTests.release.xcconfig"; sourceTree = "<group>"; };
+		A668D83A5308CBE9F662DA5D /* Pods_ESThread_iOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ESThread_iOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B17475281B6CD37000A86785 /* ESThread.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ESThread.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B174752A1B6CD37000A86785 /* ESThread_OSX.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ESThread_OSX.h; sourceTree = "<group>"; };
+		B174752C1B6CD37000A86785 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B17475311B6CD37100A86785 /* ESThread_OSXTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ESThread_OSXTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B17475381B6CD37100A86785 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B17475441B6CD37D00A86785 /* ESThread.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ESThread.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B17475461B6CD37D00A86785 /* ESThread_iOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ESThread_iOS.h; sourceTree = "<group>"; };
+		B17475481B6CD37D00A86785 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B174754D1B6CD37D00A86785 /* ESThread_iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ESThread_iOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B17475541B6CD37D00A86785 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B17475D31B6CD59200A86785 /* Invocation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Invocation.swift; sourceTree = "<group>"; };
+		B17475D41B6CD59200A86785 /* Thread.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Thread.swift; sourceTree = "<group>"; };
+		B17475D91B6CD61C00A86785 /* ThreadTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThreadTests.swift; sourceTree = "<group>"; };
+		B17475DC1B6CD64200A86785 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		B17475051B6CD36700A86785 /* Frameworks */ = {
+		B17475241B6CD37000A86785 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B17475101B6CD36700A86785 /* Frameworks */ = {
+		B174752E1B6CD37100A86785 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B17475141B6CD36700A86785 /* ESThread.framework in Frameworks */,
+				B17475321B6CD37100A86785 /* ESThread.framework in Frameworks */,
+				6B6F3A21F74F0C66E0684C8B /* Pods_ESThread_OSXTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B17475401B6CD37D00A86785 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B174754A1B6CD37D00A86785 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B174754E1B6CD37D00A86785 /* ESThread.framework in Frameworks */,
+				5672FFD5A9DAED044E1A80A8 /* Pods_ESThread_iOSTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -53,17 +99,26 @@
 		B17474FF1B6CD36700A86785 = {
 			isa = PBXGroup;
 			children = (
+				B17475DC1B6CD64200A86785 /* Podfile */,
 				B174750B1B6CD36700A86785 /* ESThread */,
+				B17475291B6CD37000A86785 /* ESThread_OSX */,
+				B17475451B6CD37D00A86785 /* ESThread_iOS */,
 				B17475171B6CD36700A86785 /* ESThreadTests */,
+				B17475351B6CD37100A86785 /* ESThread_OSXTests */,
+				B17475511B6CD37D00A86785 /* ESThread_iOSTests */,
 				B174750A1B6CD36700A86785 /* Products */,
+				C32FDC4E1EC04928163ED3B1 /* Pods */,
+				EABE49E525BE5A31DC244FDD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		B174750A1B6CD36700A86785 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B17475091B6CD36700A86785 /* ESThread.framework */,
-				B17475131B6CD36700A86785 /* ESThreadTests.xctest */,
+				B17475281B6CD37000A86785 /* ESThread.framework */,
+				B17475311B6CD37100A86785 /* ESThread_OSXTests.xctest */,
+				B17475441B6CD37D00A86785 /* ESThread.framework */,
+				B174754D1B6CD37D00A86785 /* ESThread_iOSTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -71,8 +126,8 @@
 		B174750B1B6CD36700A86785 /* ESThread */ = {
 			isa = PBXGroup;
 			children = (
-				B174750C1B6CD36700A86785 /* ESThread.h */,
-				B174750E1B6CD36700A86785 /* Info.plist */,
+				B17475D31B6CD59200A86785 /* Invocation.swift */,
+				B17475D41B6CD59200A86785 /* Thread.swift */,
 			);
 			path = ESThread;
 			sourceTree = "<group>";
@@ -80,60 +135,162 @@
 		B17475171B6CD36700A86785 /* ESThreadTests */ = {
 			isa = PBXGroup;
 			children = (
-				B17475181B6CD36700A86785 /* ESThreadTests.swift */,
-				B174751A1B6CD36700A86785 /* Info.plist */,
+				B17475D91B6CD61C00A86785 /* ThreadTests.swift */,
 			);
 			path = ESThreadTests;
+			sourceTree = "<group>";
+		};
+		B17475291B6CD37000A86785 /* ESThread_OSX */ = {
+			isa = PBXGroup;
+			children = (
+				B174752A1B6CD37000A86785 /* ESThread_OSX.h */,
+				B174752C1B6CD37000A86785 /* Info.plist */,
+			);
+			path = ESThread_OSX;
+			sourceTree = "<group>";
+		};
+		B17475351B6CD37100A86785 /* ESThread_OSXTests */ = {
+			isa = PBXGroup;
+			children = (
+				B17475381B6CD37100A86785 /* Info.plist */,
+			);
+			path = ESThread_OSXTests;
+			sourceTree = "<group>";
+		};
+		B17475451B6CD37D00A86785 /* ESThread_iOS */ = {
+			isa = PBXGroup;
+			children = (
+				B17475461B6CD37D00A86785 /* ESThread_iOS.h */,
+				B17475481B6CD37D00A86785 /* Info.plist */,
+			);
+			path = ESThread_iOS;
+			sourceTree = "<group>";
+		};
+		B17475511B6CD37D00A86785 /* ESThread_iOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				B17475541B6CD37D00A86785 /* Info.plist */,
+			);
+			path = ESThread_iOSTests;
+			sourceTree = "<group>";
+		};
+		C32FDC4E1EC04928163ED3B1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				75F80DB4457EC53799899F3C /* Pods-ESThread_OSXTests.debug.xcconfig */,
+				9535CE05C0CC3E87CFA674DB /* Pods-ESThread_OSXTests.release.xcconfig */,
+				72DB099D4F84F7BCFC0F8EA6 /* Pods-ESThread_iOSTests.debug.xcconfig */,
+				A599CEF78A27E8E5D8A23414 /* Pods-ESThread_iOSTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		EABE49E525BE5A31DC244FDD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				024550DEDD3726AF43BF72C8 /* Pods_ESThread_OSXTests.framework */,
+				A668D83A5308CBE9F662DA5D /* Pods_ESThread_iOSTests.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		B17475061B6CD36700A86785 /* Headers */ = {
+		B17475251B6CD37000A86785 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B174750D1B6CD36700A86785 /* ESThread.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B17475411B6CD37D00A86785 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B17475471B6CD37D00A86785 /* ESThread_iOS.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		B17475081B6CD36700A86785 /* ESThread */ = {
+		B17475271B6CD37000A86785 /* ESThread_OSX */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B174751D1B6CD36700A86785 /* Build configuration list for PBXNativeTarget "ESThread" */;
+			buildConfigurationList = B17475391B6CD37100A86785 /* Build configuration list for PBXNativeTarget "ESThread_OSX" */;
 			buildPhases = (
-				B17475041B6CD36700A86785 /* Sources */,
-				B17475051B6CD36700A86785 /* Frameworks */,
-				B17475061B6CD36700A86785 /* Headers */,
-				B17475071B6CD36700A86785 /* Resources */,
+				B17475231B6CD37000A86785 /* Sources */,
+				B17475241B6CD37000A86785 /* Frameworks */,
+				B17475251B6CD37000A86785 /* Headers */,
+				B17475261B6CD37000A86785 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = ESThread;
-			productName = ESThread;
-			productReference = B17475091B6CD36700A86785 /* ESThread.framework */;
+			name = ESThread_OSX;
+			productName = ESThread_OSX;
+			productReference = B17475281B6CD37000A86785 /* ESThread.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		B17475121B6CD36700A86785 /* ESThreadTests */ = {
+		B17475301B6CD37100A86785 /* ESThread_OSXTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B17475201B6CD36700A86785 /* Build configuration list for PBXNativeTarget "ESThreadTests" */;
+			buildConfigurationList = B174753C1B6CD37100A86785 /* Build configuration list for PBXNativeTarget "ESThread_OSXTests" */;
 			buildPhases = (
-				B174750F1B6CD36700A86785 /* Sources */,
-				B17475101B6CD36700A86785 /* Frameworks */,
-				B17475111B6CD36700A86785 /* Resources */,
+				FD04C166EC7D669D85F82596 /* Check Pods Manifest.lock */,
+				B174752D1B6CD37100A86785 /* Sources */,
+				B174752E1B6CD37100A86785 /* Frameworks */,
+				B174752F1B6CD37100A86785 /* Resources */,
+				B4A740C713AA78577EB9102D /* Embed Pods Frameworks */,
+				F80413719FD0E2F4BB02B9B9 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				B17475161B6CD36700A86785 /* PBXTargetDependency */,
+				B17475341B6CD37100A86785 /* PBXTargetDependency */,
 			);
-			name = ESThreadTests;
-			productName = ESThreadTests;
-			productReference = B17475131B6CD36700A86785 /* ESThreadTests.xctest */;
+			name = ESThread_OSXTests;
+			productName = ESThread_OSXTests;
+			productReference = B17475311B6CD37100A86785 /* ESThread_OSXTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B17475431B6CD37D00A86785 /* ESThread_iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B17475551B6CD37D00A86785 /* Build configuration list for PBXNativeTarget "ESThread_iOS" */;
+			buildPhases = (
+				B174753F1B6CD37D00A86785 /* Sources */,
+				B17475401B6CD37D00A86785 /* Frameworks */,
+				B17475411B6CD37D00A86785 /* Headers */,
+				B17475421B6CD37D00A86785 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ESThread_iOS;
+			productName = ESThread_iOS;
+			productReference = B17475441B6CD37D00A86785 /* ESThread.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		B174754C1B6CD37D00A86785 /* ESThread_iOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B17475581B6CD37D00A86785 /* Build configuration list for PBXNativeTarget "ESThread_iOSTests" */;
+			buildPhases = (
+				BA3E9A42B235D6D23EAD4D58 /* Check Pods Manifest.lock */,
+				B17475491B6CD37D00A86785 /* Sources */,
+				B174754A1B6CD37D00A86785 /* Frameworks */,
+				B174754B1B6CD37D00A86785 /* Resources */,
+				C15BE4D7ED214CFDD6FC8092 /* Embed Pods Frameworks */,
+				92E9B00C1880BEE104C844F9 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B17475501B6CD37D00A86785 /* PBXTargetDependency */,
+			);
+			name = ESThread_iOSTests;
+			productName = ESThread_iOSTests;
+			productReference = B174754D1B6CD37D00A86785 /* ESThread_iOSTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -142,13 +299,20 @@
 		B17475001B6CD36700A86785 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "EasyStyle G.K.";
 				TargetAttributes = {
-					B17475081B6CD36700A86785 = {
+					B17475271B6CD37000A86785 = {
 						CreatedOnToolsVersion = 7.0;
 					};
-					B17475121B6CD36700A86785 = {
+					B17475301B6CD37100A86785 = {
+						CreatedOnToolsVersion = 7.0;
+					};
+					B17475431B6CD37D00A86785 = {
+						CreatedOnToolsVersion = 7.0;
+					};
+					B174754C1B6CD37D00A86785 = {
 						CreatedOnToolsVersion = 7.0;
 					};
 				};
@@ -165,21 +329,37 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				B17475081B6CD36700A86785 /* ESThread */,
-				B17475121B6CD36700A86785 /* ESThreadTests */,
+				B17475271B6CD37000A86785 /* ESThread_OSX */,
+				B17475431B6CD37D00A86785 /* ESThread_iOS */,
+				B17475301B6CD37100A86785 /* ESThread_OSXTests */,
+				B174754C1B6CD37D00A86785 /* ESThread_iOSTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		B17475071B6CD36700A86785 /* Resources */ = {
+		B17475261B6CD37000A86785 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B17475111B6CD36700A86785 /* Resources */ = {
+		B174752F1B6CD37100A86785 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B17475421B6CD37D00A86785 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B174754B1B6CD37D00A86785 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -188,29 +368,146 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXSourcesBuildPhase section */
-		B17475041B6CD36700A86785 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
+/* Begin PBXShellScriptBuildPhase section */
+		92E9B00C1880BEE104C844F9 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
 			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ESThread_iOSTests/Pods-ESThread_iOSTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
 		};
-		B174750F1B6CD36700A86785 /* Sources */ = {
+		B4A740C713AA78577EB9102D /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ESThread_OSXTests/Pods-ESThread_OSXTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BA3E9A42B235D6D23EAD4D58 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C15BE4D7ED214CFDD6FC8092 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ESThread_iOSTests/Pods-ESThread_iOSTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F80413719FD0E2F4BB02B9B9 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ESThread_OSXTests/Pods-ESThread_OSXTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FD04C166EC7D669D85F82596 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B17475231B6CD37000A86785 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B17475191B6CD36700A86785 /* ESThreadTests.swift in Sources */,
+				B17475D51B6CD59200A86785 /* Invocation.swift in Sources */,
+				B17475D71B6CD59200A86785 /* Thread.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B174752D1B6CD37100A86785 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B17475DE1B6CD84C00A86785 /* ThreadTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B174753F1B6CD37D00A86785 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B17475D61B6CD59200A86785 /* Invocation.swift in Sources */,
+				B17475D81B6CD59200A86785 /* Thread.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B17475491B6CD37D00A86785 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B17475DD1B6CD84C00A86785 /* ThreadTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		B17475161B6CD36700A86785 /* PBXTargetDependency */ = {
+		B17475341B6CD37100A86785 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = B17475081B6CD36700A86785 /* ESThread */;
-			targetProxy = B17475151B6CD36700A86785 /* PBXContainerItemProxy */;
+			target = B17475271B6CD37000A86785 /* ESThread_OSX */;
+			targetProxy = B17475331B6CD37100A86785 /* PBXContainerItemProxy */;
+		};
+		B17475501B6CD37D00A86785 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B17475431B6CD37D00A86785 /* ESThread_iOS */;
+			targetProxy = B174754F1B6CD37D00A86785 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -299,61 +596,143 @@
 			};
 			name = Release;
 		};
-		B174751E1B6CD36700A86785 /* Debug */ = {
+		B174753A1B6CD37100A86785 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				FRAMEWORK_VERSION = A;
-				INFOPLIST_FILE = ESThread/Info.plist;
+				INFOPLIST_FILE = ESThread_OSX/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "jp.ez-style.appid.ESThread";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_BUNDLE_IDENTIFIER = "jp.ez-style.appid.ESThread-OSX";
+				PRODUCT_NAME = ESThread;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
-		B174751F1B6CD36700A86785 /* Release */ = {
+		B174753B1B6CD37100A86785 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				FRAMEWORK_VERSION = A;
-				INFOPLIST_FILE = ESThread/Info.plist;
+				INFOPLIST_FILE = ESThread_OSX/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "jp.ez-style.appid.ESThread";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_BUNDLE_IDENTIFIER = "jp.ez-style.appid.ESThread-OSX";
+				PRODUCT_NAME = ESThread;
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
 		};
-		B17475211B6CD36700A86785 /* Debug */ = {
+		B174753D1B6CD37100A86785 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 75F80DB4457EC53799899F3C /* Pods-ESThread_OSXTests.debug.xcconfig */;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = ESThreadTests/Info.plist;
+				INFOPLIST_FILE = ESThread_OSXTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "jp.ez-style.appid.ESThreadTests";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_BUNDLE_IDENTIFIER = "jp.ez-style.appid.ESThread-OSXTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
 		};
-		B17475221B6CD36700A86785 /* Release */ = {
+		B174753E1B6CD37100A86785 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9535CE05C0CC3E87CFA674DB /* Pods-ESThread_OSXTests.release.xcconfig */;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = ESThreadTests/Info.plist;
+				INFOPLIST_FILE = ESThread_OSXTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "jp.ez-style.appid.ESThreadTests";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_BUNDLE_IDENTIFIER = "jp.ez-style.appid.ESThread-OSXTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		B17475561B6CD37D00A86785 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = ESThread_iOS/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "jp.ez-style.appid.ESThread-iOS";
+				PRODUCT_NAME = ESThread;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B17475571B6CD37D00A86785 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = ESThread_iOS/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "jp.ez-style.appid.ESThread-iOS";
+				PRODUCT_NAME = ESThread;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B17475591B6CD37D00A86785 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 72DB099D4F84F7BCFC0F8EA6 /* Pods-ESThread_iOSTests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = ESThread_iOSTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "jp.ez-style.appid.ESThread-iOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		B174755A1B6CD37D00A86785 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A599CEF78A27E8E5D8A23414 /* Pods-ESThread_iOSTests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = ESThread_iOSTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "jp.ez-style.appid.ESThread-iOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
@@ -369,21 +748,41 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B174751D1B6CD36700A86785 /* Build configuration list for PBXNativeTarget "ESThread" */ = {
+		B17475391B6CD37100A86785 /* Build configuration list for PBXNativeTarget "ESThread_OSX" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B174751E1B6CD36700A86785 /* Debug */,
-				B174751F1B6CD36700A86785 /* Release */,
+				B174753A1B6CD37100A86785 /* Debug */,
+				B174753B1B6CD37100A86785 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
-		B17475201B6CD36700A86785 /* Build configuration list for PBXNativeTarget "ESThreadTests" */ = {
+		B174753C1B6CD37100A86785 /* Build configuration list for PBXNativeTarget "ESThread_OSXTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B17475211B6CD36700A86785 /* Debug */,
-				B17475221B6CD36700A86785 /* Release */,
+				B174753D1B6CD37100A86785 /* Debug */,
+				B174753E1B6CD37100A86785 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B17475551B6CD37D00A86785 /* Build configuration list for PBXNativeTarget "ESThread_iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B17475561B6CD37D00A86785 /* Debug */,
+				B17475571B6CD37D00A86785 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B17475581B6CD37D00A86785 /* Build configuration list for PBXNativeTarget "ESThread_iOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B17475591B6CD37D00A86785 /* Debug */,
+				B174755A1B6CD37D00A86785 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
