@@ -22,6 +22,14 @@ public func invokeAsync(queue:dispatch_queue_t, predicate:()->Void) {
 	dispatch_async(queue, predicate)
 }
 
+public func invokeAsync(queue:dispatch_queue_t, after delay:Double, predicate:()->Void) {
+	
+	let delta = Int64(delay * Double(NSEC_PER_SEC))
+	let time = dispatch_time(DISPATCH_TIME_NOW, delta)
+
+	dispatch_after(time, queue, predicate)
+}
+
 /// Invoke `predicate` synchronously on `queue`.
 public func invokeSync<Result>(queue:dispatch_queue_t, predicate:()->Result) -> Result {
 	
@@ -39,6 +47,11 @@ public func invokeSync<Result>(queue:dispatch_queue_t, predicate:()->Result) -> 
 public func invokeAsyncOnMainQueue(predicate:()->Void) {
  
 	invokeAsync(mainQueue, predicate: predicate)
+}
+
+public func invokeAsyncOnMainQueue(after delay:Double, predicate:()->Void) {
+ 
+	invokeAsync(mainQueue, after: delay, predicate: predicate)
 }
 
 /// Invoke `predicate` synchronously on main queue. If this function performed on main thread, invoke `predicate` immediately.
