@@ -32,13 +32,39 @@ public func invokeAsync(queue:dispatch_queue_t, after delay:Double, predicate:()
 
 /// Invoke `predicate` synchronously on `queue`.
 public func invoke<Result>(queue:dispatch_queue_t, predicate:()->Result) -> Result {
+    
+    var result:Result!
+    
+    dispatch_sync(queue) { () -> Void in
+        
+        result = predicate()
+    }
+    
+    return result
+}
+
+/// Invoke `predicate` synchronously on `queue`.
+public func invoke<Result>(queue:dispatch_queue_t, predicate:() throws ->Result) throws -> Result {
 	
 	var result:Result!
+    var resultError: ErrorType? = nil
 	
-	dispatch_sync(queue) { ()->Void in
+	dispatch_sync(queue) { () -> Void in
 		
-		result = predicate()
+        do {
+
+            result = try predicate()
+        }
+        catch {
+            
+            resultError = error
+        }
 	}
+    
+    if let error = resultError {
+    
+        throw error
+    }
 	
 	return result
 }
@@ -65,6 +91,19 @@ public func invokeOnMainQueue<Result>(predicate:()->Result) -> Result {
 		
 		return invoke(mainQueue, predicate: predicate)
 	}
+}
+
+/// Invoke `predicate` synchronously on main queue. If this function performed on main thread, invoke `predicate` immediately.
+public func invokeOnMainQueue<Result>(predicate:() throws -> Result) throws -> Result {
+    
+    if onMainQueue {
+        
+        return try predicate()
+    }
+    else {
+        
+        return try invoke(mainQueue, predicate: predicate)
+    }
 }
 
 /// Invoke `predicate` asynchronously in background.
