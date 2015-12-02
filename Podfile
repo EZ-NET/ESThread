@@ -1,4 +1,3 @@
-source 'https://github.com/EZ-NET/PodSpecs.git'
 source 'https://github.com/CocoaPods/Specs.git'
 
 use_frameworks!
@@ -10,7 +9,7 @@ end
 def pods_test
 
 	pods
-	pod 'ESTestKit', '~> 0.3.2'
+	pod 'ESTestKit', '~> 0.3.4-beta1'
 
 end
 

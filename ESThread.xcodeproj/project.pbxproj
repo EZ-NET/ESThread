@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5672FFD5A9DAED044E1A80A8 /* Pods_ESThread_iOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A668D83A5308CBE9F662DA5D /* Pods_ESThread_iOSTests.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
-		6B6F3A21F74F0C66E0684C8B /* Pods_ESThread_OSXTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 024550DEDD3726AF43BF72C8 /* Pods_ESThread_OSXTests.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		5672FFD5A9DAED044E1A80A8 /* Pods_ESThread_iOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A668D83A5308CBE9F662DA5D /* Pods_ESThread_iOSTests.framework */; };
+		6B6F3A21F74F0C66E0684C8B /* Pods_ESThread_OSXTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 024550DEDD3726AF43BF72C8 /* Pods_ESThread_OSXTests.framework */; };
 		B17475321B6CD37100A86785 /* ESThread.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B17475281B6CD37000A86785 /* ESThread.framework */; };
 		B17475471B6CD37D00A86785 /* ESThread_iOS.h in Headers */ = {isa = PBXBuildFile; fileRef = B17475461B6CD37D00A86785 /* ESThread_iOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B174754E1B6CD37D00A86785 /* ESThread.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B17475441B6CD37D00A86785 /* ESThread.framework */; };
