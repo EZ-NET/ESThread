@@ -59,6 +59,7 @@
 		B17475D91B6CD61C00A86785 /* ThreadTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThreadTests.swift; sourceTree = "<group>"; };
 		B17475DC1B6CD64200A86785 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		B19DA9591C041A38000881AE /* ESThread.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = ESThread.podspec; sourceTree = "<group>"; };
+		B1FA30691C0EB693007E7113 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +103,7 @@
 			children = (
 				B17475DC1B6CD64200A86785 /* Podfile */,
 				B19DA9591C041A38000881AE /* ESThread.podspec */,
+				B1FA30691C0EB693007E7113 /* LICENSE */,
 				B174750B1B6CD36700A86785 /* ESThread */,
 				B17475291B6CD37000A86785 /* ESThread_OSX */,
 				B17475451B6CD37D00A86785 /* ESThread_iOS */,
