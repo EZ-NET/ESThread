@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "ESThread"
-  s.version      = "0.1.1"
+  s.version      = "0.1.2"
   s.summary      = "A simply threading support functions for iOS/OSX in Swift."
 
   s.description  = <<-DESC
