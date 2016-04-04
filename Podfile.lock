@@ -1,10 +1,10 @@
 PODS:
-  - ESTestKit (0.3.4-beta1)
+  - ESTestKit (0.4.0)
 
 DEPENDENCIES:
-  - ESTestKit (~> 0.3.4-beta1)
+  - ESTestKit
 
 SPEC CHECKSUMS:
-  ESTestKit: 65900320bf674bfe9d2bffbd322ffc5cd825180b
+  ESTestKit: a97ce7bb4acc62abebccc82efa64d0fc1c13899d
 
 COCOAPODS: 0.39.0

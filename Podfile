@@ -9,7 +9,7 @@ end
 def pods_test
 
 	pods
-	pod 'ESTestKit', '~> 0.3.4-beta1'
+	pod 'ESTestKit'
 
 end
 
