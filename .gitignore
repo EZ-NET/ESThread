@@ -1,4 +1,1 @@
-/Pods
-xcuserdata
-xcshareddata
-
+*.xcuserdatad
