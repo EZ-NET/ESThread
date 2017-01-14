@@ -9,7 +9,6 @@
 import Foundation
 import XCTest
 import ESThread
-import ESTestKit
 
 class ThreadTests: XCTestCase {
 
@@ -31,14 +30,14 @@ class ThreadTests: XCTestCase {
 		
 		invokeOnMainQueue { ()->Void in
 			
-			expected().success(onMainQueue)
+            XCTAssertTrue(onMainQueue)
 
 			invoked = true
 			
 			sleepForSecond(ThreadTests.sleepTime)
 		}
 		
-		expected("Execute this line after finished a task.").success(invoked)
+        XCTAssertTrue(invoked, "Execute this line after finished a task.")
 	}
 
 	func testInvokeAsyncOnMainThread() {
@@ -47,14 +46,14 @@ class ThreadTests: XCTestCase {
 		
 		invokeAsyncOnMainQueue { ()->Void in
 			
-			expected().success(onMainQueue)
+            XCTAssertTrue(onMainQueue)
 			
 			invoked = true
 			
 			sleepForSecond(ThreadTests.sleepTime)
 		}
 		
-		unexpected("Execute this line before finish a task.").success(invoked)
+        XCTAssertFalse(invoked, "Execute this line before finished a task.")
 	}
 	
 	func testInvokeAsyncInBackground() {
@@ -63,13 +62,13 @@ class ThreadTests: XCTestCase {
 		
 		invokeAsyncInBackground { ()->Void in
 			
-			unexpected().success(onMainQueue)
+            XCTAssertFalse(onMainQueue)
 			
 			invoked = true
 			
 			sleepForSecond(ThreadTests.sleepTime)
 		}
 		
-		unexpected("Execute this line before finish a background task.").success(invoked)
+        XCTAssertFalse(invoked, "Execute this line before finished a background task.")
 	}
 }

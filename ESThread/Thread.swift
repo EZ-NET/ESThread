@@ -8,17 +8,17 @@
 
 import Foundation
 
-public func makeQueue(identifier:String) -> dispatch_queue_t {
+public func makeQueue(_ identifier:String) -> DispatchQueue {
 	
 	return makeQueue(identifier, attribute: nil)
 }
 
-public func makeQueue(identifier:String, attribute:dispatch_queue_attr_t?) -> dispatch_queue_t {
+public func makeQueue(_ identifier:String, attribute:DispatchQueue.Attributes?) -> DispatchQueue {
 	
-	return dispatch_queue_create(identifier, attribute)
+	return DispatchQueue(label: identifier, attributes: attribute!)
 }
 
-public func sleepForSecond(second:Double) {
+public func sleepForSecond(_ second:Double) {
 	
-	NSThread.sleepForTimeInterval(second)
+	Thread.sleep(forTimeInterval: second)
 }

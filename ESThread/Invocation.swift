@@ -9,33 +9,33 @@
 import Foundation
 
 /// Get main queue.
-public let mainQueue = dispatch_get_main_queue()
+public let mainQueue = DispatchQueue.main
 
 public var onMainQueue:Bool {
 
-	return NSThread.isMainThread()
+	return Thread.isMainThread
 }
 
 /// Invoke `predicate` asynchronously on `queue`.
-public func invokeAsync(queue:dispatch_queue_t, predicate:()->Void) {
+public func invokeAsync(_ queue:DispatchQueue, predicate:@escaping ()->Void) {
 	
-	dispatch_async(queue, predicate)
+	queue.async(execute: predicate)
 }
 
-public func invokeAsync(queue:dispatch_queue_t, after delay:Double, predicate:()->Void) {
+public func invokeAsync(_ queue:DispatchQueue, after delay:Double, predicate:@escaping ()->Void) {
 	
 	let delta = Int64(delay * Double(NSEC_PER_SEC))
-	let time = dispatch_time(DISPATCH_TIME_NOW, delta)
+	let time = DispatchTime.now() + Double(delta) / Double(NSEC_PER_SEC)
 
-	dispatch_after(time, queue, predicate)
+	queue.asyncAfter(deadline: time, execute: predicate)
 }
 
 /// Invoke `predicate` synchronously on `queue`.
-public func invoke<Result>(queue:dispatch_queue_t, predicate:()->Result) -> Result {
+public func invoke<Result>(_ queue:DispatchQueue, predicate:()->Result) -> Result {
     
     var result:Result!
     
-    dispatch_sync(queue) { () -> Void in
+    queue.sync { () -> Void in
         
         result = predicate()
     }
@@ -44,12 +44,12 @@ public func invoke<Result>(queue:dispatch_queue_t, predicate:()->Result) -> Resu
 }
 
 /// Invoke `predicate` synchronously on `queue`.
-public func invoke<Result>(queue:dispatch_queue_t, predicate:() throws ->Result) throws -> Result {
+public func invoke<Result>(_ queue:DispatchQueue, predicate:() throws ->Result) throws -> Result {
 	
 	var result:Result!
-    var resultError: ErrorType? = nil
+    var resultError: Error? = nil
 	
-	dispatch_sync(queue) { () -> Void in
+	queue.sync { () -> Void in
 		
         do {
 
@@ -70,18 +70,18 @@ public func invoke<Result>(queue:dispatch_queue_t, predicate:() throws ->Result)
 }
 
 /// Invoke `predicate` asynchronously on main queue.
-public func invokeAsyncOnMainQueue(predicate:()->Void) {
+public func invokeAsyncOnMainQueue(_ predicate:@escaping ()->Void) {
  
 	invokeAsync(mainQueue, predicate: predicate)
 }
 
-public func invokeAsyncOnMainQueue(after delay:Double, predicate:()->Void) {
+public func invokeAsyncOnMainQueue(after delay:Double, predicate:@escaping ()->Void) {
  
 	invokeAsync(mainQueue, after: delay, predicate: predicate)
 }
 
 /// Invoke `predicate` synchronously on main queue. If this function performed on main thread, invoke `predicate` immediately.
-public func invokeOnMainQueue<Result>(predicate:()->Result) -> Result {
+public func invokeOnMainQueue<Result>(_ predicate:()->Result) -> Result {
 	
 	if onMainQueue {
 		
@@ -94,7 +94,7 @@ public func invokeOnMainQueue<Result>(predicate:()->Result) -> Result {
 }
 
 /// Invoke `predicate` synchronously on main queue. If this function performed on main thread, invoke `predicate` immediately.
-public func invokeOnMainQueue<Result>(predicate:() throws -> Result) throws -> Result {
+public func invokeOnMainQueue<Result>(_ predicate:() throws -> Result) throws -> Result {
     
     if onMainQueue {
         
@@ -107,10 +107,10 @@ public func invokeOnMainQueue<Result>(predicate:() throws -> Result) throws -> R
 }
 
 /// Invoke `predicate` asynchronously in background.
-public func invokeAsyncInBackground(predicate:()->Void) {
+public func invokeAsyncInBackground(_ predicate:@escaping ()->Void) {
 	
-	let label = "Swim: " + NSUUID().description
-	let queue = dispatch_queue_create(label, nil)
+	let label = "Swim: " + UUID().description
+	let queue = DispatchQueue(label: label, attributes: [])
 	
 	invokeAsync(queue, predicate: predicate)
 }

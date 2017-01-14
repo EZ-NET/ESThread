@@ -9,7 +9,6 @@ end
 def pods_test
 
 	pods
-	pod 'ESTestKit'
 
 end
 
