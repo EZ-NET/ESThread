@@ -8,14 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		B17475321B6CD37100A86785 /* ESThread.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B17475281B6CD37000A86785 /* ESThread.framework */; };
-		B17475471B6CD37D00A86785 /* ESThread_iOS.h in Headers */ = {isa = PBXBuildFile; fileRef = B17475461B6CD37D00A86785 /* ESThread_iOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B174754E1B6CD37D00A86785 /* ESThread.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B17475441B6CD37D00A86785 /* ESThread.framework */; };
-		B17475D51B6CD59200A86785 /* Invocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B17475D31B6CD59200A86785 /* Invocation.swift */; };
-		B17475D61B6CD59200A86785 /* Invocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B17475D31B6CD59200A86785 /* Invocation.swift */; };
-		B17475D71B6CD59200A86785 /* Thread.swift in Sources */ = {isa = PBXBuildFile; fileRef = B17475D41B6CD59200A86785 /* Thread.swift */; };
-		B17475D81B6CD59200A86785 /* Thread.swift in Sources */ = {isa = PBXBuildFile; fileRef = B17475D41B6CD59200A86785 /* Thread.swift */; };
 		B19954671E2A4840000FD587 /* ThreadTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19954631E2A482A000FD587 /* ThreadTests.swift */; };
 		B19954681E2A4840000FD587 /* ThreadTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19954631E2A482A000FD587 /* ThreadTests.swift */; };
+		B1F6F3AD1E2A4E9E0012828C /* Invocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F6F3A51E2A4E9E0012828C /* Invocation.swift */; };
+		B1F6F3B21E2A4E9E0012828C /* Thread.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F6F3AC1E2A4E9E0012828C /* Thread.swift */; };
+		B1F6F3BB1E2A4F060012828C /* ESThread_OSX.h in Headers */ = {isa = PBXBuildFile; fileRef = B1F6F3B71E2A4F060012828C /* ESThread_OSX.h */; };
+		B1F6F3BD1E2A4F1D0012828C /* ESThread_iOS.h in Headers */ = {isa = PBXBuildFile; fileRef = B1F6F3B41E2A4F060012828C /* ESThread_iOS.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,20 +36,20 @@
 
 /* Begin PBXFileReference section */
 		B17475281B6CD37000A86785 /* ESThread.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ESThread.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B174752A1B6CD37000A86785 /* ESThread_OSX.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ESThread_OSX.h; sourceTree = "<group>"; };
-		B174752C1B6CD37000A86785 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B17475311B6CD37100A86785 /* ESThread_OSXTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ESThread_OSXTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B17475441B6CD37D00A86785 /* ESThread.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ESThread.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B17475461B6CD37D00A86785 /* ESThread_iOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ESThread_iOS.h; sourceTree = "<group>"; };
-		B17475481B6CD37D00A86785 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B174754D1B6CD37D00A86785 /* ESThread_iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ESThread_iOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		B17475D31B6CD59200A86785 /* Invocation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Invocation.swift; sourceTree = "<group>"; };
-		B17475D41B6CD59200A86785 /* Thread.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Thread.swift; sourceTree = "<group>"; };
-		B199545F1E2A482A000FD587 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B19954611E2A482A000FD587 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B19954631E2A482A000FD587 /* ThreadTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThreadTests.swift; sourceTree = "<group>"; };
 		B19DA9591C041A38000881AE /* ESThread.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = ESThread.podspec; sourceTree = "<group>"; };
 		B1F6F3391E2A4A220012828C /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
+		B1F6F3A51E2A4E9E0012828C /* Invocation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Invocation.swift; sourceTree = "<group>"; };
+		B1F6F3AC1E2A4E9E0012828C /* Thread.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Thread.swift; sourceTree = "<group>"; };
+		B1F6F3B41E2A4F060012828C /* ESThread_iOS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESThread_iOS.h; sourceTree = "<group>"; };
+		B1F6F3B51E2A4F060012828C /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B1F6F3B71E2A4F060012828C /* ESThread_OSX.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESThread_OSX.h; sourceTree = "<group>"; };
+		B1F6F3B81E2A4F060012828C /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B1F6F3BF1E2A4F870012828C /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B1F6F3C11E2A4F870012828C /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B1FA30691C0EB693007E7113 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -94,10 +93,12 @@
 				B1F6F3391E2A4A220012828C /* Package.swift */,
 				B19DA9591C041A38000881AE /* ESThread.podspec */,
 				B1FA30691C0EB693007E7113 /* LICENSE */,
-				B174750B1B6CD36700A86785 /* ESThread */,
-				B17475291B6CD37000A86785 /* ESThread_OSX */,
-				B17475451B6CD37D00A86785 /* ESThread_iOS */,
+				B1F6F3A31E2A4E9E0012828C /* Sources */,
 				B199545D1E2A482A000FD587 /* Tests */,
+				B1F6F3B31E2A4F060012828C /* ESThread_iOS */,
+				B1F6F3B61E2A4F060012828C /* ESThread_OSX */,
+				B1F6F3BE1E2A4F870012828C /* ESThread_iOSTests */,
+				B1F6F3C01E2A4F870012828C /* ESThread_OSXTests */,
 				B174750A1B6CD36700A86785 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -113,57 +114,12 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		B174750B1B6CD36700A86785 /* ESThread */ = {
-			isa = PBXGroup;
-			children = (
-				B17475D31B6CD59200A86785 /* Invocation.swift */,
-				B17475D41B6CD59200A86785 /* Thread.swift */,
-			);
-			path = ESThread;
-			sourceTree = "<group>";
-		};
-		B17475291B6CD37000A86785 /* ESThread_OSX */ = {
-			isa = PBXGroup;
-			children = (
-				B174752A1B6CD37000A86785 /* ESThread_OSX.h */,
-				B174752C1B6CD37000A86785 /* Info.plist */,
-			);
-			path = ESThread_OSX;
-			sourceTree = "<group>";
-		};
-		B17475451B6CD37D00A86785 /* ESThread_iOS */ = {
-			isa = PBXGroup;
-			children = (
-				B17475461B6CD37D00A86785 /* ESThread_iOS.h */,
-				B17475481B6CD37D00A86785 /* Info.plist */,
-			);
-			path = ESThread_iOS;
-			sourceTree = "<group>";
-		};
 		B199545D1E2A482A000FD587 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
 				B19954621E2A482A000FD587 /* ESThreadTests */,
-				B199545E1E2A482A000FD587 /* ESThread_iOSTests */,
-				B19954601E2A482A000FD587 /* ESThread_OSXTests */,
 			);
 			path = Tests;
-			sourceTree = "<group>";
-		};
-		B199545E1E2A482A000FD587 /* ESThread_iOSTests */ = {
-			isa = PBXGroup;
-			children = (
-				B199545F1E2A482A000FD587 /* Info.plist */,
-			);
-			path = ESThread_iOSTests;
-			sourceTree = "<group>";
-		};
-		B19954601E2A482A000FD587 /* ESThread_OSXTests */ = {
-			isa = PBXGroup;
-			children = (
-				B19954611E2A482A000FD587 /* Info.plist */,
-			);
-			path = ESThread_OSXTests;
 			sourceTree = "<group>";
 		};
 		B19954621E2A482A000FD587 /* ESThreadTests */ = {
@@ -174,6 +130,57 @@
 			path = ESThreadTests;
 			sourceTree = "<group>";
 		};
+		B1F6F3A31E2A4E9E0012828C /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				B1F6F3A41E2A4E9E0012828C /* ESThread */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		B1F6F3A41E2A4E9E0012828C /* ESThread */ = {
+			isa = PBXGroup;
+			children = (
+				B1F6F3A51E2A4E9E0012828C /* Invocation.swift */,
+				B1F6F3AC1E2A4E9E0012828C /* Thread.swift */,
+			);
+			path = ESThread;
+			sourceTree = "<group>";
+		};
+		B1F6F3B31E2A4F060012828C /* ESThread_iOS */ = {
+			isa = PBXGroup;
+			children = (
+				B1F6F3B41E2A4F060012828C /* ESThread_iOS.h */,
+				B1F6F3B51E2A4F060012828C /* Info.plist */,
+			);
+			path = ESThread_iOS;
+			sourceTree = "<group>";
+		};
+		B1F6F3B61E2A4F060012828C /* ESThread_OSX */ = {
+			isa = PBXGroup;
+			children = (
+				B1F6F3B71E2A4F060012828C /* ESThread_OSX.h */,
+				B1F6F3B81E2A4F060012828C /* Info.plist */,
+			);
+			path = ESThread_OSX;
+			sourceTree = "<group>";
+		};
+		B1F6F3BE1E2A4F870012828C /* ESThread_iOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				B1F6F3BF1E2A4F870012828C /* Info.plist */,
+			);
+			path = ESThread_iOSTests;
+			sourceTree = "<group>";
+		};
+		B1F6F3C01E2A4F870012828C /* ESThread_OSXTests */ = {
+			isa = PBXGroup;
+			children = (
+				B1F6F3C11E2A4F870012828C /* Info.plist */,
+			);
+			path = ESThread_OSXTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -181,6 +188,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B1F6F3BB1E2A4F060012828C /* ESThread_OSX.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -188,7 +196,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B17475471B6CD37D00A86785 /* ESThread_iOS.h in Headers */,
+				B1F6F3BD1E2A4F1D0012828C /* ESThread_iOS.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -351,8 +359,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B17475D51B6CD59200A86785 /* Invocation.swift in Sources */,
-				B17475D71B6CD59200A86785 /* Thread.swift in Sources */,
+				B1F6F3AD1E2A4E9E0012828C /* Invocation.swift in Sources */,
+				B1F6F3B21E2A4E9E0012828C /* Thread.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -368,8 +376,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B17475D61B6CD59200A86785 /* Invocation.swift in Sources */,
-				B17475D81B6CD59200A86785 /* Thread.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -532,8 +538,9 @@
 		B174753D1B6CD37100A86785 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = Tests/ESThread_OSXTests/Info.plist;
+				INFOPLIST_FILE = ESThread_OSXTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				PRODUCT_BUNDLE_IDENTIFIER = "jp.ez-style.appid.ESThread-OSXTests";
@@ -545,8 +552,9 @@
 		B174753E1B6CD37100A86785 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = Tests/ESThread_OSXTests/Info.plist;
+				INFOPLIST_FILE = ESThread_OSXTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				PRODUCT_BUNDLE_IDENTIFIER = "jp.ez-style.appid.ESThread-OSXTests";
@@ -605,7 +613,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				INFOPLIST_FILE = Tests/ESThread_iOSTests/Info.plist;
+				INFOPLIST_FILE = ESThread_iOSTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "jp.ez-style.appid.ESThread-iOSTests";
@@ -619,7 +627,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				INFOPLIST_FILE = Tests/ESThread_iOSTests/Info.plist;
+				INFOPLIST_FILE = ESThread_iOSTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "jp.ez-style.appid.ESThread-iOSTests";

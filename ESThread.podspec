@@ -1,11 +1,11 @@
 Pod::Spec.new do |s|
 
   s.name         = "ESThread"
-  s.version      = "0.2.0"
+  s.version      = "0.3.1"
   s.summary      = "A simply threading support functions for iOS/OSX in Swift."
 
   s.description  = <<-DESC
-                   It is a swift module that simply support threading functions. This module written in Swift 2.0.
+                   It is a swift module that simply support threading functions. This module written in Swift 3.
                    DESC
 
   s.homepage     = "https://github.com/EZ-NET/ESThread"
