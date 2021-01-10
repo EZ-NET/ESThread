@@ -8,7 +8,7 @@
 
 import Foundation
 import XCTest
-import ESThread
+@testable import ESThread
 
 class ThreadTests: XCTestCase {
 
